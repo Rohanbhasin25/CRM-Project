@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82A63052498E0A800F2A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63042498E0A800F2A9FA /* AppDelegate.swift */; };
+		F82A63072498E0A800F2A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63062498E0A800F2A9FA /* SceneDelegate.swift */; };
+		F82A63092498E0A800F2A9FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63082498E0A800F2A9FA /* ViewController.swift */; };
+		F82A630C2498E0A800F2A9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82A630A2498E0A800F2A9FA /* Main.storyboard */; };
+		F82A630F2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F82A630D2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld */; };
+		F82A63112498E0AB00F2A9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82A63102498E0AB00F2A9FA /* Assets.xcassets */; };
+		F82A63142498E0AB00F2A9FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82A63122498E0AB00F2A9FA /* LaunchScreen.storyboard */; };
+		F82A631F2498E0AC00F2A9FA /* CRM_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A631E2498E0AC00F2A9FA /* CRM_ManagerTests.swift */; };
+		F82A632A2498E0AC00F2A9FA /* CRM_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82A631B2498E0AC00F2A9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82A62F92498E0A800F2A9FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82A63002498E0A800F2A9FA;
+			remoteInfo = "CRM Manager";
+		};
+		F82A63262498E0AC00F2A9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82A62F92498E0A800F2A9FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82A63002498E0A800F2A9FA;
+			remoteInfo = "CRM Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F82A63012498E0A800F2A9FA /* CRM Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRM Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A63042498E0A800F2A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F82A63062498E0A800F2A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F82A63082498E0A800F2A9FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82A630B2498E0A800F2A9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F82A630E2498E0A800F2A9FA /* CRM_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CRM_Manager.xcdatamodel; sourceTree = "<group>"; };
+		F82A63102498E0AB00F2A9FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82A63132498E0AB00F2A9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F82A63152498E0AC00F2A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82A631A2498E0AC00F2A9FA /* CRM ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRM ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A631E2498E0AC00F2A9FA /* CRM_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRM_ManagerTests.swift; sourceTree = "<group>"; };
+		F82A63202498E0AC00F2A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82A63252498E0AC00F2A9FA /* CRM ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRM ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRM_ManagerUITests.swift; sourceTree = "<group>"; };
+		F82A632B2498E0AC00F2A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82A62FE2498E0A800F2A9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63172498E0AC00F2A9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63222498E0AC00F2A9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82A62F82498E0A800F2A9FA = {
+			isa = PBXGroup;
+			children = (
+				F82A63032498E0A800F2A9FA /* CRM Manager */,
+				F82A631D2498E0AC00F2A9FA /* CRM ManagerTests */,
+				F82A63282498E0AC00F2A9FA /* CRM ManagerUITests */,
+				F82A63022498E0A800F2A9FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F82A63022498E0A800F2A9FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82A63012498E0A800F2A9FA /* CRM Manager.app */,
+				F82A631A2498E0AC00F2A9FA /* CRM ManagerTests.xctest */,
+				F82A63252498E0AC00F2A9FA /* CRM ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82A63032498E0A800F2A9FA /* CRM Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F82A63042498E0A800F2A9FA /* AppDelegate.swift */,
+				F82A63062498E0A800F2A9FA /* SceneDelegate.swift */,
+				F82A63082498E0A800F2A9FA /* ViewController.swift */,
+				F82A630A2498E0A800F2A9FA /* Main.storyboard */,
+				F82A63102498E0AB00F2A9FA /* Assets.xcassets */,
+				F82A63122498E0AB00F2A9FA /* LaunchScreen.storyboard */,
+				F82A63152498E0AC00F2A9FA /* Info.plist */,
+				F82A630D2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld */,
+			);
+			path = "CRM Manager";
+			sourceTree = "<group>";
+		};
+		F82A631D2498E0AC00F2A9FA /* CRM ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F82A631E2498E0AC00F2A9FA /* CRM_ManagerTests.swift */,
+				F82A63202498E0AC00F2A9FA /* Info.plist */,
+			);
+			path = "CRM ManagerTests";
+			sourceTree = "<group>";
+		};
+		F82A63282498E0AC00F2A9FA /* CRM ManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */,
+				F82A632B2498E0AC00F2A9FA /* Info.plist */,
+			);
+			path = "CRM ManagerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82A63002498E0A800F2A9FA /* CRM Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A632E2498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM Manager" */;
+			buildPhases = (
+				F82A62FD2498E0A800F2A9FA /* Sources */,
+				F82A62FE2498E0A800F2A9FA /* Frameworks */,
+				F82A62FF2498E0A800F2A9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CRM Manager";
+			productName = "CRM Manager";
+			productReference = F82A63012498E0A800F2A9FA /* CRM Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F82A63192498E0AC00F2A9FA /* CRM ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A63312498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerTests" */;
+			buildPhases = (
+				F82A63162498E0AC00F2A9FA /* Sources */,
+				F82A63172498E0AC00F2A9FA /* Frameworks */,
+				F82A63182498E0AC00F2A9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82A631C2498E0AC00F2A9FA /* PBXTargetDependency */,
+			);
+			name = "CRM ManagerTests";
+			productName = "CRM ManagerTests";
+			productReference = F82A631A2498E0AC00F2A9FA /* CRM ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F82A63242498E0AC00F2A9FA /* CRM ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A63342498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerUITests" */;
+			buildPhases = (
+				F82A63212498E0AC00F2A9FA /* Sources */,
+				F82A63222498E0AC00F2A9FA /* Frameworks */,
+				F82A63232498E0AC00F2A9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82A63272498E0AC00F2A9FA /* PBXTargetDependency */,
+			);
+			name = "CRM ManagerUITests";
+			productName = "CRM ManagerUITests";
+			productReference = F82A63252498E0AC00F2A9FA /* CRM ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82A62F92498E0A800F2A9FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "ROHAN BHASIN";
+				TargetAttributes = {
+					F82A63002498E0A800F2A9FA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					F82A63192498E0AC00F2A9FA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = F82A63002498E0A800F2A9FA;
+					};
+					F82A63242498E0AC00F2A9FA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = F82A63002498E0A800F2A9FA;
+					};
+				};
+			};
+			buildConfigurationList = F82A62FC2498E0A800F2A9FA /* Build configuration list for PBXProject "CRM Manager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82A62F82498E0A800F2A9FA;
+			productRefGroup = F82A63022498E0A800F2A9FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82A63002498E0A800F2A9FA /* CRM Manager */,
+				F82A63192498E0AC00F2A9FA /* CRM ManagerTests */,
+				F82A63242498E0AC00F2A9FA /* CRM ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82A62FF2498E0A800F2A9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A63142498E0AB00F2A9FA /* LaunchScreen.storyboard in Resources */,
+				F82A63112498E0AB00F2A9FA /* Assets.xcassets in Resources */,
+				F82A630C2498E0A800F2A9FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63182498E0AC00F2A9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63232498E0AC00F2A9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82A62FD2498E0A800F2A9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A630F2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld in Sources */,
+				F82A63092498E0A800F2A9FA /* ViewController.swift in Sources */,
+				F82A63052498E0A800F2A9FA /* AppDelegate.swift in Sources */,
+				F82A63072498E0A800F2A9FA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63162498E0AC00F2A9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A631F2498E0AC00F2A9FA /* CRM_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A63212498E0AC00F2A9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A632A2498E0AC00F2A9FA /* CRM_ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82A631C2498E0AC00F2A9FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82A63002498E0A800F2A9FA /* CRM Manager */;
+			targetProxy = F82A631B2498E0AC00F2A9FA /* PBXContainerItemProxy */;
+		};
+		F82A63272498E0AC00F2A9FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82A63002498E0A800F2A9FA /* CRM Manager */;
+			targetProxy = F82A63262498E0AC00F2A9FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F82A630A2498E0A800F2A9FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82A630B2498E0A800F2A9FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F82A63122498E0AB00F2A9FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82A63132498E0AB00F2A9FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F82A632C2498E0AC00F2A9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F82A632D2498E0AC00F2A9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F82A632F2498E0AC00F2A9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F82A63302498E0AC00F2A9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F82A63322498E0AC00F2A9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRM Manager.app/CRM Manager";
+			};
+			name = Debug;
+		};
+		F82A63332498E0AC00F2A9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM ManagerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRM Manager.app/CRM Manager";
+			};
+			name = Release;
+		};
+		F82A63352498E0AC00F2A9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CRM Manager";
+			};
+			name = Debug;
+		};
+		F82A63362498E0AC00F2A9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPHS88KX6T;
+				INFOPLIST_FILE = "CRM ManagerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohanbhasin.CRM-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CRM Manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82A62FC2498E0A800F2A9FA /* Build configuration list for PBXProject "CRM Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A632C2498E0AC00F2A9FA /* Debug */,
+				F82A632D2498E0AC00F2A9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A632E2498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A632F2498E0AC00F2A9FA /* Debug */,
+				F82A63302498E0AC00F2A9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A63312498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A63322498E0AC00F2A9FA /* Debug */,
+				F82A63332498E0AC00F2A9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A63342498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A63352498E0AC00F2A9FA /* Debug */,
+				F82A63362498E0AC00F2A9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F82A630D2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F82A630E2498E0A800F2A9FA /* CRM_Manager.xcdatamodel */,
+			);
+			currentVersion = F82A630E2498E0A800F2A9FA /* CRM_Manager.xcdatamodel */;
+			path = CRM_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F82A62F92498E0A800F2A9FA /* Project object */;
+}
