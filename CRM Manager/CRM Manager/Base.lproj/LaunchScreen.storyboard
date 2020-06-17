@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,17 +10,63 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="splashController" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="rle-ab-ihU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-En-1HQ" userLabel="Topdown">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="581"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="UJc-0t-43j" userLabel="logo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="533.33333333333337"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1273" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-h1-4lm" userLabel="CRM">
+                                <rect key="frame" x="0.0" y="590" width="414" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="oWH-au-FS3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tc-logo-new-white" translatesAutoresizingMaskIntoConstraints="NO" id="uay-gA-jeT">
+                                <rect key="frame" x="112.66666666666669" y="325.66666666666669" width="189" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="7mg-7q-cDj"/>
+                                    <constraint firstAttribute="height" constant="85" id="H1Q-az-Vfv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="UJc-0t-43j" firstAttribute="height" secondItem="FiT-En-1HQ" secondAttribute="height" multiplier="0.917963" id="979-We-tYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C4o-h1-4lm" secondAttribute="bottom" constant="11" id="Aey-1z-oLH"/>
+                            <constraint firstItem="FiT-En-1HQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BJh-wi-OPO"/>
+                            <constraint firstItem="FiT-En-1HQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-14" id="EC4-bc-3Jf"/>
+                            <constraint firstItem="C4o-h1-4lm" firstAttribute="top" secondItem="FiT-En-1HQ" secondAttribute="bottom" constant="23" id="M5o-lm-SYs"/>
+                            <constraint firstItem="UJc-0t-43j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ndw-cC-5MV"/>
+                            <constraint firstItem="uay-gA-jeT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YFB-cu-v6C"/>
+                            <constraint firstItem="C4o-h1-4lm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YsS-8m-M2W"/>
+                            <constraint firstItem="C4o-h1-4lm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dFP-Tb-5vi"/>
+                            <constraint firstItem="UJc-0t-43j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fa0-aD-J7x"/>
+                            <constraint firstItem="FiT-En-1HQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iDE-bR-81Q"/>
+                            <constraint firstItem="uay-gA-jeT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="prT-hK-ccL"/>
+                            <constraint firstItem="UJc-0t-43j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rLH-ha-Dyr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="373.66071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Group 1" width="344.66665649414062" height="323.33334350585938"/>
+        <image name="Group 1273" width="168.33332824707031" height="78.333335876464844"/>
+        <image name="Group 3" width="180" height="247"/>
+        <image name="tc-logo-new-white" width="65.666664123535156" height="26.666666030883789"/>
+    </resources>
 </document>
