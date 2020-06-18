@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var LoginView: UIView!
+    @IBOutlet weak var GmailButton: UIButton!
+    @IBOutlet weak var LoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        LoginView.layer.cornerRadius = 3.0
+        LoginButton.layer.cornerRadius = 3.0
+        GmailButton.layer.cornerRadius = 3.0
     }
 
 

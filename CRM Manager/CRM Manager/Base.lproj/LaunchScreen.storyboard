@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController storyboardIdentifier="splashController" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="rle-ab-ihU">
@@ -20,26 +20,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="FiT-En-1HQ" userLabel="Topdown">
-                                <rect key="frame" x="0.0" y="-14" width="414" height="581"/>
+                                <rect key="frame" x="0.0" y="-14" width="375" height="512"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="UJc-0t-43j" userLabel="logo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="533.33333333333337"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1273" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-h1-4lm" userLabel="CRM">
-                                <rect key="frame" x="0.0" y="590" width="414" height="135"/>
+                                <rect key="frame" x="0.0" y="521" width="375" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="oWH-au-FS3"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tc-logo-new-white" translatesAutoresizingMaskIntoConstraints="NO" id="uay-gA-jeT">
-                                <rect key="frame" x="112.66666666666669" y="325.66666666666669" width="189" height="85"/>
+                                <rect key="frame" x="93" y="291" width="189" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="7mg-7q-cDj"/>
                                     <constraint firstAttribute="height" constant="85" id="H1Q-az-Vfv"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UJc-0t-43j" firstAttribute="height" secondItem="FiT-En-1HQ" secondAttribute="height" multiplier="0.917963" id="979-We-tYo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C4o-h1-4lm" secondAttribute="bottom" constant="11" id="Aey-1z-oLH"/>
@@ -64,9 +64,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 1" width="344.66665649414062" height="323.33334350585938"/>
-        <image name="Group 1273" width="168.33332824707031" height="78.333335876464844"/>
-        <image name="Group 3" width="180" height="247"/>
-        <image name="tc-logo-new-white" width="65.666664123535156" height="26.666666030883789"/>
+        <image name="Group 1" width="517" height="485"/>
+        <image name="Group 1273" width="252.5" height="117.5"/>
+        <image name="Group 3" width="270" height="370.5"/>
+        <image name="tc-logo-new-white" width="98.5" height="40"/>
     </resources>
 </document>
