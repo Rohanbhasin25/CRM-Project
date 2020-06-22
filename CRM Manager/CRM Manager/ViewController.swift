@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        LoginView.layer.cornerRadius = 3.0
-        LoginButton.layer.cornerRadius = 3.0
-        GmailButton.layer.cornerRadius = 3.0
+        LoginView.layer.cornerRadius = 4.0
+        LoginButton.layer.cornerRadius = 4.0
+        GmailButton.layer.cornerRadius = 4.0
     }
 
 
