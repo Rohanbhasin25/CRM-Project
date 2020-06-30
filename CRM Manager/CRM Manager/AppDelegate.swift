@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
           }
           return
         }
+       
+
+        
         // Perform any operations on signed in user here.
         let userId = user.userID                  // For client-side use only!
         let idToken = user.authentication.idToken // Safe to send to the server
@@ -28,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let givenName = user.profile.givenName
         let familyName = user.profile.familyName
         let email = user.profile.email
+        
+        
+   
+        print(userId,idToken,fullName,givenName,familyName,email)
+    
     }
     
     
@@ -37,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 4.0)
         
-        GIDSignIn.sharedInstance().clientID = "YOUR_CLIENT_ID"
+        GIDSignIn.sharedInstance().clientID = "33825673762-rst832dnbovgrq4ip6u5pr5aokf7j6hm.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
 
         return true
@@ -68,6 +76,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+      // Perform any operations when the user disconnects from app here.
+      // ...
     }
 
     // MARK: - Core Data stack
