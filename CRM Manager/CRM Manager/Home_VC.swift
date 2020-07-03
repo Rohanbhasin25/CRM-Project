@@ -8,6 +8,8 @@
 
 import UIKit
 import GoogleSignIn
+import Kingfisher
+
 
 class Home_VC: UIViewController, GIDSignInDelegate {
 
@@ -17,6 +19,8 @@ class Home_VC: UIViewController, GIDSignInDelegate {
     @IBOutlet weak var profileImg: UIImageView!
     
     var userName = "Alex"
+    
+    
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
@@ -42,21 +46,28 @@ class Home_VC: UIViewController, GIDSignInDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+       
         
        var name = GIDSignIn.sharedInstance()?.currentUser.profile.givenName
-       var url = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 100)
-  
-        var path = url?.path
-        print(path)
+        var url = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 50)?.absoluteString
+        
         blueBox.layer.cornerRadius = 50
         blueBox.layer.maskedCorners = [.layerMinXMaxYCorner]
         
         welcome.text = "Hello " + name!
+
+        func viewDidLayoutSubviews() {
+       super.viewDidLayoutSubviews()
+       profileImg.layer.cornerRadius = profileImg.frame.size.width/2
+       profileImg.layer.masksToBounds = true
+            profileImg.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            profileImg.layer.borderWidth = 3
+   }
+        viewDidLayoutSubviews()
         
-   
-    
-    
+        let Imgurl = URL(string:url! )
+        profileImg.kf.setImage(with: Imgurl)
+
     /*
     // MARK: - Navigation
 
