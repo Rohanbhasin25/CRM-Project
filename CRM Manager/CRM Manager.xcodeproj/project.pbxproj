@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27FFA65F7279A6EFF0713CCE /* Pods_CRM_Manager_CRM_ManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82293BC66C4E01E95B38FD3B /* Pods_CRM_Manager_CRM_ManagerUITests.framework */; };
+		82A7D232A1894D11049F4A62 /* Pods_CRM_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3313BEAF476E66BBA7ACE8C /* Pods_CRM_Manager.framework */; };
+		AE88E1D38E90FF0A444746FF /* Pods_CRM_ManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D4811A215CB9B4337AD6CF /* Pods_CRM_ManagerTests.framework */; };
 		F826310B249BB542003CD02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82A630A2498E0A800F2A9FA /* Main.storyboard */; };
 		F82A63052498E0A800F2A9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63042498E0A800F2A9FA /* AppDelegate.swift */; };
 		F82A63072498E0A800F2A9FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63062498E0A800F2A9FA /* SceneDelegate.swift */; };
@@ -37,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		198C703567721BF471B4ADA2 /* Pods-CRM Manager-CRM ManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM Manager-CRM ManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3756809F20872D5EA042D37D /* Pods-CRM Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM Manager.debug.xcconfig"; path = "Target Support Files/Pods-CRM Manager/Pods-CRM Manager.debug.xcconfig"; sourceTree = "<group>"; };
+		4E84EBEF4516B0C27C235070 /* Pods-CRM ManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM ManagerTests.release.xcconfig"; path = "Target Support Files/Pods-CRM ManagerTests/Pods-CRM ManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A8309CA2FC4FC80105C2240 /* Pods-CRM Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM Manager.release.xcconfig"; path = "Target Support Files/Pods-CRM Manager/Pods-CRM Manager.release.xcconfig"; sourceTree = "<group>"; };
+		7BC9848322D6DF2DE2EB393D /* Pods-CRM Manager-CRM ManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM Manager-CRM ManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81D4811A215CB9B4337AD6CF /* Pods_CRM_ManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRM_ManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82293BC66C4E01E95B38FD3B /* Pods_CRM_Manager_CRM_ManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRM_Manager_CRM_ManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3313BEAF476E66BBA7ACE8C /* Pods_CRM_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRM_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A63012498E0A800F2A9FA /* CRM Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRM Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A63042498E0A800F2A9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82A63062498E0A800F2A9FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +63,7 @@
 		F82A63252498E0AC00F2A9FA /* CRM ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRM ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRM_ManagerUITests.swift; sourceTree = "<group>"; };
 		F82A632B2498E0AC00F2A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84ED1035FACA8686AF17B66 /* Pods-CRM ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CRM ManagerTests/Pods-CRM ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F89DA190249A29F100EE4C54 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A7D232A1894D11049F4A62 /* Pods_CRM_Manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE88E1D38E90FF0A444746FF /* Pods_CRM_ManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FFA65F7279A6EFF0713CCE /* Pods_CRM_Manager_CRM_ManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22683DA2412D64521908AA1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3756809F20872D5EA042D37D /* Pods-CRM Manager.debug.xcconfig */,
+				5A8309CA2FC4FC80105C2240 /* Pods-CRM Manager.release.xcconfig */,
+				7BC9848322D6DF2DE2EB393D /* Pods-CRM Manager-CRM ManagerUITests.debug.xcconfig */,
+				198C703567721BF471B4ADA2 /* Pods-CRM Manager-CRM ManagerUITests.release.xcconfig */,
+				F84ED1035FACA8686AF17B66 /* Pods-CRM ManagerTests.debug.xcconfig */,
+				4E84EBEF4516B0C27C235070 /* Pods-CRM ManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43D6691DC442BC92E197B8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3313BEAF476E66BBA7ACE8C /* Pods_CRM_Manager.framework */,
+				82293BC66C4E01E95B38FD3B /* Pods_CRM_Manager_CRM_ManagerUITests.framework */,
+				81D4811A215CB9B4337AD6CF /* Pods_CRM_ManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F82A62F82498E0A800F2A9FA = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +125,8 @@
 				F82A631D2498E0AC00F2A9FA /* CRM ManagerTests */,
 				F82A63282498E0AC00F2A9FA /* CRM ManagerUITests */,
 				F82A63022498E0A800F2A9FA /* Products */,
+				22683DA2412D64521908AA1E /* Pods */,
+				43D6691DC442BC92E197B8E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82A632E2498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM Manager" */;
 			buildPhases = (
+				13AAA603EA8421B9D63B5001 /* [CP] Check Pods Manifest.lock */,
 				F82A62FD2498E0A800F2A9FA /* Sources */,
 				F82A62FE2498E0A800F2A9FA /* Frameworks */,
 				F82A62FF2498E0A800F2A9FA /* Resources */,
+				5536F655CA3024FF735747BA /* [CP] Embed Pods Frameworks */,
+				2F98DA018F35934A1FB75C48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82A63312498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerTests" */;
 			buildPhases = (
+				6A19E6D04F0F950F70360587 /* [CP] Check Pods Manifest.lock */,
 				F82A63162498E0AC00F2A9FA /* Sources */,
 				F82A63172498E0AC00F2A9FA /* Frameworks */,
 				F82A63182498E0AC00F2A9FA /* Resources */,
@@ -176,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82A63342498E0AC00F2A9FA /* Build configuration list for PBXNativeTarget "CRM ManagerUITests" */;
 			buildPhases = (
+				E907D9ECDC9218C990FED488 /* [CP] Check Pods Manifest.lock */,
 				F82A63212498E0AC00F2A9FA /* Sources */,
 				F82A63222498E0AC00F2A9FA /* Frameworks */,
 				F82A63232498E0AC00F2A9FA /* Resources */,
+				49F07B5A518F8BC113B488F8 /* [CP] Embed Pods Frameworks */,
+				9DB79EF1932C477CD2494EDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +307,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13AAA603EA8421B9D63B5001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRM Manager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F98DA018F35934A1FB75C48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F07B5A518F8BC113B488F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5536F655CA3024FF735747BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM Manager/Pods-CRM Manager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A19E6D04F0F950F70360587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRM ManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB79EF1932C477CD2494EDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRM Manager-CRM ManagerUITests/Pods-CRM Manager-CRM ManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E907D9ECDC9218C990FED488 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRM Manager-CRM ManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F82A62FD2498E0A800F2A9FA /* Sources */ = {
@@ -440,6 +624,7 @@
 		};
 		F82A632F2498E0AC00F2A9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3756809F20872D5EA042D37D /* Pods-CRM Manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +643,7 @@
 		};
 		F82A63302498E0AC00F2A9FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8309CA2FC4FC80105C2240 /* Pods-CRM Manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +662,7 @@
 		};
 		F82A63322498E0AC00F2A9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84ED1035FACA8686AF17B66 /* Pods-CRM ManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +685,7 @@
 		};
 		F82A63332498E0AC00F2A9FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E84EBEF4516B0C27C235070 /* Pods-CRM ManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +708,7 @@
 		};
 		F82A63352498E0AC00F2A9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC9848322D6DF2DE2EB393D /* Pods-CRM Manager-CRM ManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +729,7 @@
 		};
 		F82A63362498E0AC00F2A9FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198C703567721BF471B4ADA2 /* Pods-CRM Manager-CRM ManagerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

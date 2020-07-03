@@ -17,18 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var LoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-       GIDSignIn.sharedInstance()?.presentingViewController = self
-
-            // Automatically sign in the user.
-            GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-
-        LoginView.layer.cornerRadius = 4.0
-        LoginButton.layer.cornerRadius = 4.0
         
-    }
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+       
+        if ((GIDSignIn.sharedInstance()?.hasPreviousSignIn()) != nil){
+            print("signed in")
+            performSegue(withIdentifier: "Trans", sender: self)
+        }
+
+
+     
     
   
 
 
 }
 
+}
