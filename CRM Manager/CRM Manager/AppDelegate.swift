@@ -31,10 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let givenName = user.profile.givenName
         let familyName = user.profile.familyName
         let email = user.profile.email
+        var imageURL = ""
         
+        if user.profile.hasImage {
+            imageURL = user.profile.imageURL(withDimension: 100).absoluteString
+        }
+       
+
         
-   
-        print(userId,idToken,fullName,givenName,familyName,email)
+       
     
     }
     
@@ -82,6 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
               withError error: Error!) {
       // Perform any operations when the user disconnects from app here.
       // ...
+        
     }
 
     // MARK: - Core Data stack
@@ -130,4 +136,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
 
 }
+
 

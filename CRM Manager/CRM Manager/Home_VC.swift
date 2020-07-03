@@ -7,16 +7,56 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class Home_VC: UIViewController {
+class Home_VC: UIViewController, GIDSignInDelegate {
 
+    @IBOutlet weak var blueBox: UIImageView!
+    @IBOutlet weak var welcome: UILabel!
+    
+    @IBOutlet weak var profileImg: UIImageView!
+    
+    var userName = "Alex"
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+
+            let controller = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Home_VC") as! Home_VC
+            controller.modalPresentationStyle = .fullScreen // this line use from ios 13
+            self.present(controller, animated: true, completion: nil)  // use for model
+          //  self.navigationController?.pushViewController(controller, animated: true) // use for push
+            
+            
+            
+            // Sign out of Google when logic completes for security purposes
+         //   GIDSignIn.sharedInstance().signOut()
+
+        } else {
+            print(error.localizedDescription)
+            
+                 
+        }
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
 
+        
+       var name = GIDSignIn.sharedInstance()?.currentUser.profile.givenName
+       var url = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 100)
+  
+        var path = url?.path
+        print(path)
+        blueBox.layer.cornerRadius = 50
+        blueBox.layer.maskedCorners = [.layerMinXMaxYCorner]
+        
+        welcome.text = "Hello " + name!
+        
+   
+    
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +66,8 @@ class Home_VC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+}
 }
