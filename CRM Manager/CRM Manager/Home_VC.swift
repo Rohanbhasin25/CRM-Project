@@ -15,6 +15,7 @@ class Home_VC: UIViewController, GIDSignInDelegate {
 
     @IBOutlet weak var blueBox: UIImageView!
     @IBOutlet weak var welcome: UILabel!
+    let transition = SlideInTransition()
     
     @IBOutlet weak var profileImg: UIImageView!
     
@@ -48,14 +49,19 @@ class Home_VC: UIViewController, GIDSignInDelegate {
 
        
         
-       var name = GIDSignIn.sharedInstance()?.currentUser.profile.givenName
-        var url = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 50)?.absoluteString
+        var name = GIDSignIn.sharedInstance()?.currentUser.profile.givenName
+        let url = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 50)?.absoluteString
         
         blueBox.layer.cornerRadius = 50
         blueBox.layer.maskedCorners = [.layerMinXMaxYCorner]
         
+        if (name == nil) {
+            
+            print("Name not found")
+            name = "Alex"
+        }
+        
         welcome.text = "Hello " + name!
-
         func viewDidLayoutSubviews() {
        super.viewDidLayoutSubviews()
        profileImg.layer.cornerRadius = profileImg.frame.size.width/2
@@ -81,4 +87,28 @@ class Home_VC: UIViewController, GIDSignInDelegate {
     
     
 }
+    
+    @IBAction func hamburgerTap(_ sender: Any) {
+        
+        guard let menuVC = storyboard?.instantiateViewController(identifier: "Menu_VC") else { return }
+        menuVC.modalPresentationStyle = .overCurrentContext
+        menuVC.transitioningDelegate = self
+        present(menuVC, animated: true)
+    }
+    
+}
+
+extension Home_VC:UIViewControllerTransitioningDelegate{
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+        
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+        
+    }
 }
