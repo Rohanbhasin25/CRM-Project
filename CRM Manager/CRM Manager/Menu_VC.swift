@@ -8,7 +8,19 @@
 
 import UIKit
 
-class Menu_VC: UIViewController {
+enum MenuType:Int{
+    
+    case home
+    case lead
+    case contact
+    case archiveLead
+    case help
+    case feedback
+    case logout
+    
+}
+
+class Menu_VC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +29,11 @@ class Menu_VC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let menuType = MenuType(rawValue: indexPath.row) else { return }
+        dismiss(animated: true){
+            print("\(menuType) Clicked")
+        }
     }
-    */
 
 }
