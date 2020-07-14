@@ -20,6 +20,10 @@
 		F82A63142498E0AB00F2A9FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82A63122498E0AB00F2A9FA /* LaunchScreen.storyboard */; };
 		F82A631F2498E0AC00F2A9FA /* CRM_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A631E2498E0AC00F2A9FA /* CRM_ManagerTests.swift */; };
 		F82A632A2498E0AC00F2A9FA /* CRM_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */; };
+		F859AEBD24B512BB00303616 /* Menu_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859AEBC24B512BB00303616 /* Menu_VC.swift */; };
+		F859AEBF24B5137D00303616 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859AEBE24B5137D00303616 /* SlideInTransition.swift */; };
+		F859AEC224B61C6E00303616 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859AEC124B61C6E00303616 /* Service.swift */; };
+		F859AEC424B61CF900303616 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859AEC324B61CF900303616 /* LoginModel.swift */; };
 		F89DA1B7249A29F400EE4C54 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F89DA190249A29F100EE4C54 /* OFL.txt */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,10 @@
 		F82A63292498E0AC00F2A9FA /* CRM_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRM_ManagerUITests.swift; sourceTree = "<group>"; };
 		F82A632B2498E0AC00F2A9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84ED1035FACA8686AF17B66 /* Pods-CRM ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRM ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CRM ManagerTests/Pods-CRM ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F859AEBC24B512BB00303616 /* Menu_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_VC.swift; sourceTree = "<group>"; };
+		F859AEBE24B5137D00303616 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		F859AEC124B61C6E00303616 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F859AEC324B61CF900303616 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		F89DA190249A29F100EE4C54 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +153,7 @@
 		F82A63032498E0A800F2A9FA /* CRM Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F859AEC024B61C5100303616 /* Service */,
 				F82A63042498E0A800F2A9FA /* AppDelegate.swift */,
 				F82A63062498E0A800F2A9FA /* SceneDelegate.swift */,
 				F82A63082498E0A800F2A9FA /* ViewController.swift */,
@@ -155,6 +164,8 @@
 				F82A630D2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld */,
 				F89DA190249A29F100EE4C54 /* OFL.txt */,
 				F802078824AF3522005BCF2B /* Home_VC.swift */,
+				F859AEBC24B512BB00303616 /* Menu_VC.swift */,
+				F859AEBE24B5137D00303616 /* SlideInTransition.swift */,
 			);
 			path = "CRM Manager";
 			sourceTree = "<group>";
@@ -175,6 +186,15 @@
 				F82A632B2498E0AC00F2A9FA /* Info.plist */,
 			);
 			path = "CRM ManagerUITests";
+			sourceTree = "<group>";
+		};
+		F859AEC024B61C5100303616 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F859AEC124B61C6E00303616 /* Service.swift */,
+				F859AEC324B61CF900303616 /* LoginModel.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,8 +474,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F802078924AF3522005BCF2B /* Home_VC.swift in Sources */,
+				F859AEC224B61C6E00303616 /* Service.swift in Sources */,
+				F859AEBD24B512BB00303616 /* Menu_VC.swift in Sources */,
 				F82A630F2498E0A800F2A9FA /* CRM_Manager.xcdatamodeld in Sources */,
+				F859AEC424B61CF900303616 /* LoginModel.swift in Sources */,
 				F82A63092498E0A800F2A9FA /* ViewController.swift in Sources */,
+				F859AEBF24B5137D00303616 /* SlideInTransition.swift in Sources */,
 				F82A63052498E0A800F2A9FA /* AppDelegate.swift in Sources */,
 				F82A63072498E0A800F2A9FA /* SceneDelegate.swift in Sources */,
 			);

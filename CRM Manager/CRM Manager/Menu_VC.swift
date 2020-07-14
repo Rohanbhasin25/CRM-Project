@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 enum MenuType:Int{
     
@@ -20,6 +21,8 @@ enum MenuType:Int{
     
 }
 
+
+
 class Menu_VC: UITableViewController {
 
     override func viewDidLoad() {
@@ -30,10 +33,24 @@ class Menu_VC: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+
         guard let menuType = MenuType(rawValue: indexPath.row) else { return }
         dismiss(animated: true){
+            var viewClicked = "\(menuType)"
             print("\(menuType) Clicked")
+            if (viewClicked == "logout"){
+                
+                let controller = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "initController") as! ViewController
+                controller.modalPresentationStyle = .fullScreen // this line use from ios 13
+                self.present(controller, animated: true, completion: nil)
+                
+                 GIDSignIn.sharedInstance().signOut()
+                
+            }
+            
+            }
         }
     }
 
-}
+

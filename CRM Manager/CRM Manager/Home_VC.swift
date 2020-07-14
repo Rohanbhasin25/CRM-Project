@@ -9,17 +9,26 @@
 import UIKit
 import GoogleSignIn
 import Kingfisher
+import UserNotifications
 
 
 class Home_VC: UIViewController, GIDSignInDelegate {
 
+    @IBOutlet weak var setView: UIView!
+    @IBOutlet weak var graphView: UIView!
+    @IBOutlet weak var dartView: UIView!
+    @IBOutlet weak var meetView: UIView!
+    @IBOutlet weak var congView: UIView!
+    @IBOutlet weak var rockView: UIView!
+    
     @IBOutlet weak var blueBox: UIImageView!
     @IBOutlet weak var welcome: UILabel!
     let transition = SlideInTransition()
     
     @IBOutlet weak var profileImg: UIImageView!
     
-    var userName = "Alex"
+    var userName = "Not Found"
+    
     
     
     
@@ -47,6 +56,12 @@ class Home_VC: UIViewController, GIDSignInDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        graphView.styleView()
+        rockView.styleView()
+        meetView.styleView()
+        congView.styleView()
+        setView.styleView()
+        dartView.styleView()
        
         
         var name = GIDSignIn.sharedInstance()?.currentUser.profile.givenName
@@ -112,3 +127,17 @@ extension Home_VC:UIViewControllerTransitioningDelegate{
         
     }
 }
+
+extension UIView {
+      func styleView(scale: Bool = true) {
+          layer.masksToBounds = false
+          layer.shadowColor = UIColor.black.cgColor
+          layer.shadowOpacity = 0.2
+          layer.shadowOffset = .zero
+          layer.shadowRadius = 3
+          layer.shouldRasterize = true
+          layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+          layer.cornerRadius = 16.0
+          layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+      }
+  }

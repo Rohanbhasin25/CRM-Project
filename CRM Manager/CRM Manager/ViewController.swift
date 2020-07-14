@@ -17,6 +17,16 @@ class ViewController: UIViewController, UINavigationControllerDelegate, GIDSignI
     @IBOutlet weak var LoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Service.Shareinstance.getLoginData { (objects, error ) in
+            if (error == nil){
+                print(objects)
+            }else {
+                print(objects)
+            }
+            
+             
+        }
         GIDSignIn.sharedInstance().delegate = self
 
         GIDSignIn.sharedInstance()?.presentingViewController = self
